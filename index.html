@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/11ec26bc07.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/my-logo.jpg" class="logo">
+                 <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Project</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                 </ul>
+                 <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Student</p>
+                <h1>Hello, I'm <span>Chinmay Mahata</span> <br> from Kolkata, India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----about---- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profle.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <ul>
+                        <li>Committed Computer Science and Engineering student
+                            with a strong foundation in web development, data
+                            structures and algorithms (DSA), operating systems,
+                            computer networks, and software engineering.</li>
+                        <li>Active participant in organizing social events,
+                            showcasing teamwork and communication abilities.</li>
+                        <li>Looking forward to learning new skills and expanding
+                            knowledge to contribute as a software developer
+                            under the guidance of experienced professionals.</li>
+                    </ul>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C, Java, Python, Shell Scripting, SQL</li>
+                            <li><span>Web Development</span><br>HTML, CSS, Bootstrap, JavaScript</li>
+                            <li><span>Software Tools</span><br>VS Code, Eclipse, Vim, Windows, Ubuntu, GitHub, Oracle SQL, XAMPP, MS Office, StarUML, Dia</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Techno Main Salt Lake (2021 - 2025)</span><br>B. Tech in Computer Science and Engineering<br> CGPA - 8.37 (till 6th Sem)</li>
+                            <li><span>Purulia Zilla School (2019)</span><br>W.B.C.H.S.E <br> Percentage - 84.8</li>
+                            <li><span>Purulia Zilla School (2017)</span><br>W.B.B.S.E <br> Percentage - 92.43</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>August 2024</span><br>Successfully completed the learning path, Career Essentials in Generative AI by Microsoft and LinkedIn.</li>
+                                    <li><span>April - June 2024</span><br>Successfully completed the Google AI-ML Virtual Internship provided by AICTE.</li>
+                                    <li><span>April 2024</span><br>Participated in SIT ICOE Hackathon 2024.</li>
+                            <li><span>2022 - Present</span><br>Member of Management Team of Samaritans, the NSS Club of Techno Main Salt Lake.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <!-- -----portfolio----- -->
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">My Projects</div>
+             <div class="work-list">
+                <div class="work">
+                    <img src="images/fake-news.jpg">
+                    <div class="layer">
+                        <h3>Fake News Detection System</h3>
+                        <p>It will help people detect fake news. Check out the code.</p>
+                        <a href="https://github.com/chinmay-mahata/Fake-News-Detection-System"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/virtual-assistant.jpg">
+                    <div class="layer">
+                        <h3>Desktop AI Assistant</h3>
+                        <p>It will assist people do day-to-day tasks. Check out the code.</p>
+                        <a href="https://github.com/chinmay-mahata/Desktop-AI-Assistant"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/weather-app.png">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>It will get the weather report of different locations. Try this out.</p>
+                        <a href="https://chinmay-mahata.github.io/Weather-App/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                
+             </div>
+             <a href="#" class="button">See More</a>
+        </div>
+    </div>
+
+
+    <!-- -----contact----- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> chinmaymahata05@gmail.com</p>
+                    <p><i class="fas fa-phone-square"></i> +91 7365857695</p>
+                    <div class="social-media-icons">
+                        <a href="https://m.facebook.com/100082509650171/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/ChinmayMahato_9"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/iam._chinmay/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/chinmay-mahata-0104b9252"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="documents/Chinmay-Mahata.pdf" download class="button button2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button button2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Chinmay Mahata's Portfolio Website. All rights reserved.</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxDeVExfgyySqsrYApzzhFaS8IsP1ZdQimvnbH2BYscgvpLlJHbZ9H4LrhjUqhsayroJg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully !!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
